@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
-  get 'ccsf_rails/index'
-
-  get 'ccsf_rails/links'
-
-  get 'ccsf_rails/about'
-  
-  get 'ccsf_rails/assignments'
-
+  root 'static_page#home'
   get 'static_pages/home'
-
   get 'static_pages/help'
-
-  root 'application#hello'
+  get 'static_pages/about'
+  get 'static_pages/contact'
+  
+  get 'ccsf_rails/index'
+  get 'ccsf_rails/links'
+  get 'ccsf_rails/about'
+  get 'ccsf_rails/assignments'
 end

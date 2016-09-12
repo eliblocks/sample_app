@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class CcsfRailsControllerTest < ActionDispatch::IntegrationTest
+
   test "should get index" do
     get ccsf_rails_index_url
     assert_response :success
