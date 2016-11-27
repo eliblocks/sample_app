@@ -32,7 +32,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   
   config.action_mailer.delivery_method = :test
-  host = 'cs232-blocks.c9users.io'
+  host = 'localhost:3000'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
   
   # Print deprecation notices to the Rails logger.
