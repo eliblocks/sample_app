@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'final_exam/finished_the_course'
+
   resources :posts
   get 'password_resets/new'
 
@@ -22,9 +24,10 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
-  
+
   get 'ccsf_rails/index'
   get 'ccsf_rails/links'
   get 'ccsf_rails/about'
   get 'ccsf_rails/assignments'
+  get 'final_exam/finished_the_course'
 end
